@@ -56,7 +56,7 @@ export const loginUser = async (req, res) => {
             res.cookie('token', token, {
                 httpsOnly: process.env.VITE_NODE_ENV === 'production',
                 secure: process.env.VITE_NODE_ENV === 'production',
-
+                sameSite: 'None'
 
 
 
