@@ -47,6 +47,9 @@ app.use('/', authRouter);
 app.use('/', expenseRouter);
 app.use('/', incomeRouter);
 
+app.get('/', (req, res) => {
+    res.send('Hello World');
+})
 
 app.listen(PORT, () => {
 

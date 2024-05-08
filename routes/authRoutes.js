@@ -7,6 +7,7 @@ const authRouter = express.Router();
 authRouter.use(cors({
     origin: process.env.VITE_NODE_ENV == "development" ? "http://localhost:3000" : process.env.VITE_CLIENT_BASE_URL,
     credentials: true,
+
     // Secure in production
 
 }));
