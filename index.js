@@ -31,8 +31,8 @@ const corsOptions = {
     origin: process.env.VITE_NODE_ENV == "development" ? "http://localhost:3000" : process.env.VITE_CLIENT_BASE_URL
     ,
     credentials: true,
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    allowedHeaders: 'Content-Type,Authorization'
+    // methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    // allowedHeaders: 'Content-Type,Authorization'
 
 
 
@@ -47,9 +47,6 @@ app.use('/', authRouter);
 app.use('/', expenseRouter);
 app.use('/', incomeRouter);
 
-app.get('/', (req, res) => {
-    res.send('Welcome to the Budget App API');
-});
 
 app.listen(PORT, () => {
 
