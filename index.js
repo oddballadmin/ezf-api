@@ -8,7 +8,7 @@ import incomeRouter from './routes/incomeRoutes.js';
 import cors from 'cors';
 
 
-const PORT = 8001;
+const PORT = process.env.PORT || 8001;
 const connString = `${process.env.MONGO_URL}`;
 const app = express();
 
