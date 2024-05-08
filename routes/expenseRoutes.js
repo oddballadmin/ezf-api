@@ -13,11 +13,11 @@ expenseRouter.use(cors({
 }));
 
 // API - Routes
-expenseRouter.get('/api/expenses/', protect, getAllExpenses);
-expenseRouter.post('/api/expenses/add', protect, addExpense);
-expenseRouter.delete('/api/expenses/delete/:id', protect, deleteExpense);
-expenseRouter.patch('/api/expenses/update/:id', protect, updateExpense);
-expenseRouter.get('/api/expenses/:id', protect, getSingleExpense);
+expenseRouter.get('/expenses/', protect, getAllExpenses);
+expenseRouter.post('/expenses/add', protect, addExpense);
+expenseRouter.delete('/expenses/delete/:id', protect, deleteExpense);
+expenseRouter.patch('/expenses/update/:id', protect, updateExpense);
+expenseRouter.get('/expenses/:id', protect, getSingleExpense);
 
 
 export default expenseRouter;

@@ -13,11 +13,11 @@ incomeRouter.use(cors({
 
 // API - Routes
 
-incomeRouter.get('/api/income', protect, getAllIncomes);
-incomeRouter.post('/api/income/add', protect, addIncome);
-incomeRouter.delete('/api/income/delete/:id', protect, deleteIncome);
-incomeRouter.patch('/api/income/update/:id', protect, updateIncome);
-incomeRouter.get('/api/income/:id', protect, getSingleIncome);
+incomeRouter.get('/income', protect, getAllIncomes);
+incomeRouter.post('/income/add', protect, addIncome);
+incomeRouter.delete('/income/delete/:id', protect, deleteIncome);
+incomeRouter.patch('/income/update/:id', protect, updateIncome);
+incomeRouter.get('/income/:id', protect, getSingleIncome);
 
 
 export default incomeRouter;
