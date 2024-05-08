@@ -12,9 +12,9 @@ authRouter.use(cors({
 }));
 
 // API - Routes
-authRouter.post('api/register', registerUser);
-authRouter.post('api/login', loginUser);
-authRouter.get('api/profile', getProfile);
-authRouter.get('api/user', getUser);
+authRouter.post('/api/register', registerUser);
+authRouter.post('/api/login', loginUser);
+authRouter.get('/api/profile', getProfile);
+authRouter.get('/api/user', getUser);
 
 export default authRouter;
